@@ -1,9 +1,10 @@
 import React from "react"
-
-const Square = () => {
+// destructuring props, do not need to write props and can pass mulitple variables inside parameters with separation of a comma
+const Square = ({ square }) => {
+  // console.log(props)
   return (
     <>
-      <div className="square"></div>
+      <div className="square">{square}</div>
     </>
   )
 }

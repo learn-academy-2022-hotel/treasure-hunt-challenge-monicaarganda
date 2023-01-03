@@ -6,4 +6,17 @@ h1 {
   height: 200px;
   width: 200px;
   border: 1px solid black;
+  font-size: 10rem;
+  text-align: center;
+}
+
+.board {
+  /*  stick the boxes together*/
+  display: flex;
+  /* made the boxes space inside evenly */
+  flex-wrap: wrap;
+  /* control width of the game borad */
+  width: 610px;
+  /* control the space around to center the box */
+  margin: 0 auto;
 }
