@@ -16,7 +16,12 @@ const App = () => {
   ])
 
   const handleGamePlay = (clickSquare) => {
-    alert(clickSquare)
+    // declaring a new variable by using the spread operator to access the given array
+    let updateBorad = [...board]
+    // access the board on its specific index
+    updateBorad[clickSquare] = "🏝"
+    // update the variable by using usestate method and new variable
+    setBoard(updateBorad)
   }
 
   return (
@@ -39,3 +44,8 @@ const App = () => {
 }
 
 export default App
+
+
+// const handleGamePlay = (clickSquare) => {
+//   alert(clickSquare)
+// }
